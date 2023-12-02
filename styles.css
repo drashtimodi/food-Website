@@ -1,0 +1,143 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.463)), url(bc.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: auto;
+    height: auto;
+    background-position: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+section nav .logo img {
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 7px;
+}
+
+section nav ul {
+    list-style: none;
+    margin-left: 4px;
+    padding: 4px;
+}
+
+section nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul a {
+    text-decoration: none;
+    color: rgb(243, 239, 232);
+    font-weight: 500px;
+    font-size: 30px;
+    transition: 0.15s;
+}
+
+section nav ul a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul a:hover:after {
+    width: 100%;
+}
+
+section nav ul a:hover {
+    color: coral;
+}
+
+.btn {
+    margin: 4px;
+}
+
+.btn input {
+    border: none;
+    outline: none;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    background: fixed;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: rgb(183, 20, 20);
+    font-size: 20px;
+    color: azure;
+}
+
+.btn input:hover {
+    background: rgb(213, 226, 29);
+    cursor: pointer;
+    color: #000;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 700px;
+    background: #00000062;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.196);
+    margin: 70px auto auto;
+}
+
+.text h1 {
+    font-size: 70px;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(249, 247, 246);
+    margin: 7px auto;
+}
+
+.text h2 {
+    margin: 10px auto;
+    font-weight: 300;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: ghostwhite;
+}
+
+.text input {
+    height: 50px;
+    width: 300px;
+    border: none;
+    font-size: 20px;
+    color: #000;
+    outline: 0;
+    border-radius: 30px;
+    margin: 30px auto 10px;
+    padding: 5px 40px;
+}
+
+.text button {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    margin: 5px auto 30px;
+    background-color: #d13131;
+    color: white;
+    font-size: 20px;
+}
